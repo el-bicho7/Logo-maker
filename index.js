@@ -43,7 +43,7 @@ inquirer
     }
 
     let text = new Text(char, textColor);
-    console.log(shape.setColor('gray'))
+    text.setText('WIN', 'green')
     return writeFile(join(__dirname,'examples', 'task.html'), createDocument(shape.render(), text.render()) );
   })
   .catch((err)=> {

@@ -43,8 +43,10 @@ inquirer
     }
 
     let text = new Text(char, textColor);
-    text.setText('WIN', 'green')
-    return writeFile(join(__dirname,'examples', 'task.html'), createDocument(shape.render(), text.render()) );
+    return writeFile(join(__dirname,'examples', 'logo.svg'), createDocument(shape.render(), text.render()) );
+  })
+  .then(()=>{
+    console.log("Generated logo.svg");
   })
   .catch((err)=> {
     console.log(err);

@@ -5,6 +5,7 @@ const { createDocument } = require('./lib/document.js');
 const Circle = require('./lib/circle.js');
 const Triangle = require('./lib/triangle.js');
 const Square = require('./lib/square.js');
+const Text = require('./lib/text.js');
 
 
 inquirer
@@ -34,14 +35,16 @@ inquirer
   .then(({char, textColor, shapeForm, shapeColor})=> {
     let shape = ''
     if (shapeForm === 'circle'){
-      shape = new Circle(char, textColor, shapeForm, shapeColor);
+      shape = new Circle(shapeForm, shapeColor);
     } else if (shapeForm === 'triangle'){
-      shape = new Triangle(char, textColor, shapeForm, shapeColor);
+      shape = new Triangle(shapeForm, shapeColor);
     } else {
-      shape = new Square(char, textColor, shapeForm, shapeColor);
+      shape = new Square(shapeForm, shapeColor);
     }
 
-    return writeFile(join(__dirname,'examples', 'task.html'), createDocument(shape.render()) );
+    let text = new Text(char, textColor);
+    console.log(shape.setColor('gray'))
+    return writeFile(join(__dirname,'examples', 'task.html'), createDocument(shape.render(), text.render()) );
   })
   .catch((err)=> {
     console.log(err);

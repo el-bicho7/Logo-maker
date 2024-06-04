@@ -1,5 +1,5 @@
 <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    <rect x="50" y="10" width="180" height="180" fill="green"/> 
-    <text x="150" y="120" font-family="Arial" font-size="24" fill="orange" text-anchor="middle">WIN</text>
+    <polygon points="150, 18 244, 182 56, 182" fill="green"/> 
+    <text x="150" y="120" font-family="Arial" font-size="24" fill="blue" text-anchor="middle">WTF</text>
   </svg>
   

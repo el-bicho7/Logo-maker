@@ -32,7 +32,9 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
   - [Questions](#questions)
 
   ## Installation 
-  npm i, node index.js
+  Run in the integrated terminal the following commands:
+    - npm i
+    - node index.js
 
   ## Usage
   This project was made so we can create a logo, using Node.js, and by using classes and testing.
@@ -49,7 +51,9 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
   Cristian Loera
 
   ## Test
-  npm i, npm test
+ To run the test you need to run the following commands in the integrated terminal. 
+  - npm i
+  - npm test
 
  ![npm test showing shape.setColor('blue')](image-4.png)
 
